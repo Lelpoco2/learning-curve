@@ -19,6 +19,31 @@ The package is **dormant** in normal sessions. It becomes a tutor only when the 
 inside a *learning workspace* (a vault containing `.learning-curve/`). The same vault works with
 both agents: notes, progress, gaps and flashcards are shared.
 
+## Contents
+
+- [Requirements](#requirements)
+- [Install](#install)
+- [Setup and first steps](#setup-and-first-steps)
+  - [With pi](#with-pi)
+  - [With Claude Code](#with-claude-code)
+  - [A typical study session](#a-typical-study-session)
+- [Claude Code](#claude-code)
+- [Commands](#commands)
+- [How it teaches](#how-it-teaches)
+- [Lesson kinds](#lesson-kinds)
+- [Tools of the tutor](#tools-of-the-tutor)
+- [Technologies](#technologies)
+- [Math in the terminal (pi)](#math-in-the-terminal-pi)
+- [Obsidian formatting](#obsidian-formatting)
+- [Fact checking](#fact-checking)
+- [Subjects and shared topics](#subjects-and-shared-topics)
+- [Vault layout](#vault-layout)
+- [Recommended Obsidian plugins](#recommended-obsidian-plugins)
+- [Configuration](#configuration)
+- [TODO](#todo)
+- [Development](#development)
+- [License](#license)
+
 ## Requirements
 
 | What | Needed for |
