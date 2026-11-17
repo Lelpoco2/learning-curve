@@ -1,0 +1,11 @@
+{
+  "name": "learning-curve",
+  "owner": { "name": "Lelpoco2" },
+  "plugins": [
+    {
+      "name": "learning-curve",
+      "source": "./",
+      "description": "Structured STEM tutor that keeps everything in your Obsidian vault."
+    }
+  ]
+}

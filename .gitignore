@@ -1,0 +1,14 @@
+node_modules/
+*.log
+.tmp/
+
+# A learning workspace created inside the repo (personal data, never part of the package)
+.learning-curve/
+.obsidian/
+00 Learner/
+/preamble.sty
+
+# Lockfiles: Learning Curve has no runtime dependencies. Claude Code runs `npm ci` when a plugin
+# ships a lockfile (that would install pi and its dependency tree for nothing).
+package-lock.json
+bun.lock

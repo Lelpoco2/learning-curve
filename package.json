@@ -1,0 +1,76 @@
+{
+  "name": "pi-learning-curve",
+  "version": "0.14.1",
+  "description": "Turns pi or Claude Code into a structured STEM tutor: knowledge and learning-style interviews, study plans, lessons by subject kind, verified math and code, quizzes with gap reinforcement, spaced repetition, all saved to Obsidian.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "learning",
+    "tutor",
+    "obsidian",
+    "latex",
+    "stem",
+    "spaced-repetition",
+    "claude-code",
+    "claude-code-plugin",
+    "mcp"
+  ],
+  "files": [
+    "extensions",
+    "claude",
+    "commands",
+    "hooks",
+    ".claude-plugin",
+    ".mcp.json",
+    "skills",
+    "prompts",
+    "templates",
+    "README.md",
+    "CHANGELOG.md",
+    "docs",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ],
+    "skills": [],
+    "prompts": []
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.5.0",
+    "@earendil-works/pi-coding-agent": "1.5.0",
+    "@earendil-works/pi-tui": "1.5.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lelpoco2/learning-curve.git"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-ai": {
+      "optional": true
+    },
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "@earendil-works/pi-tui": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "learning-curve",
+  "version": "0.14.1",
+  "description": "Structured STEM tutor: knowledge and learning-style interviews, study plans, intuition-first lessons by subject kind (math, physics, computer science, programming), verified math and code, quizzes with gap reinforcement, spaced repetition — all saved to an Obsidian vault.",
+  "author": {
+    "name": "Lelpoco2"
+  },
+  "repository": "https://github.com/Lelpoco2/learning-curve",
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "tutor",
+    "obsidian",
+    "latex",
+    "stem",
+    "spaced-repetition",
+    "education"
+  ]
+}

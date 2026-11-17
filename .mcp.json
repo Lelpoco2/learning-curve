@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "learning-curve": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/claude/run.mjs", "mcp"]
+    }
+  }
+}
