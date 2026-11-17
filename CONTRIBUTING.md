@@ -81,7 +81,9 @@ claude plugin validate .               # Claude Code manifest, commands and skil
 ## Making a change
 
 1. Open an issue first for anything bigger than a small fix, so we can agree on the approach.
-2. Create a branch from `master`.
+2. Fork the repository (or create a branch, if you have write access) from `master`. `master` is
+   protected: changes reach it only through pull requests, and its history is never rewritten
+   (force pushes and deletion are blocked for everyone).
 3. Write or update tests next to the code you change (`tests/*.test.ts`). Every bug fix should
    come with a test that fails without the fix.
 4. Run `npm test` and `npm run typecheck`; for Claude Code changes also `claude plugin validate .`.
