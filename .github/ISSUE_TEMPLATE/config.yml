@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Lelpoco2/learning-curve/security/advisories/new
+    about: Please report security problems privately, not as public issues.
+  - name: Documentation
+    url: https://github.com/Lelpoco2/learning-curve#contents
+    about: Installation, setup, commands and configuration are described in the README.

@@ -1,0 +1,103 @@
+name: Bug report
+description: Something does not work as described (tools, notes, quizzes, setup, Claude Code or pi integration).
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please check the [open issues](https://github.com/Lelpoco2/learning-curve/issues) first.
+        **Security problems:** do not report them here — see [SECURITY.md](https://github.com/Lelpoco2/learning-curve/blob/master/SECURITY.md).
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options:
+        - pi
+        - Claude Code — terminal
+        - Claude Code — VS Code extension
+        - Claude Code — desktop app
+        - Claude Code — other
+        - Both pi and Claude Code
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Setup (/learn-setup, workspace)
+        - Lessons and templates (lesson kinds)
+        - Quizzes, tests, exercises, grading
+        - Spaced repetition and flashcards
+        - Notes and Obsidian formatting (note check)
+        - Math verification (math_check) / plots / Manim
+        - Running code (code_run)
+        - Fact checking (source_lookup)
+        - Subjects, syllabus, topic folders
+        - Math display in chat
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Screenshots welcome.
+      placeholder: "I ran /quiz and…"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: As precise as possible, ideally in a fresh test workspace (not your real vault).
+      placeholder: |
+        1. /learn-setup in an empty folder (Obsidian, English, …)
+        2. /new-subject …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Tool output or error messages
+      description: Paste the relevant tool result, error or note-check report. It is formatted as code automatically.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Learning Curve version
+      description: "`version` in package.json (or `.claude-plugin/plugin.json`), e.g. 0.14.1"
+      placeholder: "0.14.1"
+    validations:
+      required: true
+  - type: input
+    id: agent-version
+    attributes:
+      label: Agent version
+      description: "`pi --version` or `claude --version`"
+      placeholder: "Claude Code 2.1.326"
+  - type: input
+    id: environment
+    attributes:
+      label: OS and Node.js version
+      placeholder: "Windows 11, Node 24.19.0"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The model the agent was using (behaviour can depend on it).
+      placeholder: "Claude Opus, high thinking"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues.
+          required: true
+        - label: The report contains no personal data from my notes that I do not want to share.
+          required: true

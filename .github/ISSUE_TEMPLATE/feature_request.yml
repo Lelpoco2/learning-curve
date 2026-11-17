@@ -1,0 +1,59 @@
+name: Feature request
+description: Suggest an improvement to how Learning Curve teaches, checks or organises your notes.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Check the [TODO list in the README](https://github.com/Lelpoco2/learning-curve#todo) and the open issues first — it may already be planned.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Learning problem
+      description: What is hard, slow or missing when you study with Learning Curve? Describe the situation, not only the solution.
+      placeholder: "When I study physics, I cannot…"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How should it work? Commands, notes, templates, tools… Examples or sketches of a note welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways you thought of, or how you work around it today.
+  - type: dropdown
+    id: agents
+    attributes:
+      label: Which agent should it work in?
+      options:
+        - Both pi and Claude Code
+        - pi only
+        - Claude Code only
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject area (if specific)
+      multiple: true
+      options:
+        - Mathematics
+        - Physics
+        - Computer science
+        - Programming
+        - Other STEM
+        - Other subjects
+        - Not subject-specific
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to help implement or test it.

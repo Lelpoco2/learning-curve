@@ -42,6 +42,7 @@ both agents: notes, progress, gaps and flashcards are shared.
 - [Configuration](#configuration)
 - [TODO](#todo)
 - [Development](#development)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Requirements
@@ -422,6 +423,13 @@ claude plugin validate .       # check the Claude Code plugin manifest, commands
 The repository has no lockfile on purpose: Claude Code runs `npm ci` when a plugin ships one.
 See [docs/DESIGN.md](docs/DESIGN.md) for the architecture and [CHANGELOG.md](CHANGELOG.md) for
 the history.
+
+## Contributing
+
+Contributions are welcome: bug reports, ideas, teaching material (skills, templates, lesson
+kinds) and code. Read the [contribution guidelines](CONTRIBUTING.md) and the
+[Code of Conduct](CODE_OF_CONDUCT.md); report security problems privately as described in the
+[security policy](SECURITY.md).
 
 ## License
 
